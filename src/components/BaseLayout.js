@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Style from "./BaseLayout.module.scss";
-import Navbar from "./Navbar";
-import NavBar from "./Navbar_tmp";
+import NavBar from "./Navbar";
 import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
+import Resume from "./resume/resume";
+import Career from "./career/Career";
+import DashBoard from "./dashboard/DashBoard";
 import { Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 
@@ -46,6 +48,9 @@ export default function BaseLayout() {
             <Route exact path={"/"} element={<Home />} />
             <Route exact path={"/about"} element={<About />} />
             <Route exact path={"/portfolio"} element={<Portfolio />} />
+            <Route exact path={"/resume"} element={<Resume />} />
+            <Route exact path={"/career"} element={<Career />} />
+            <Route exact path={"/dashboard"} element={<DashBoard />} />
           </Routes>
         </Grid>
         <Grid item>
@@ -58,11 +63,7 @@ export default function BaseLayout() {
             sx={{ opacity: 0.7 }}
             width={"100%"}
           >
-            <p>
-              template created with &hearts; by{" "}
-              <a href={"https://paytonpierce.dev"}>Payton Pierce</a>
-            </p>
-            <p>&copy; 2023</p>
+            <p>Yoo JiMin</p>
           </Box>
         </Grid>
       </Grid>
