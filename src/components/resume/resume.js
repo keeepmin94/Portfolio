@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-import { Box, Grid } from "@mui/material";
-import Button from "react-bootstrap/Button";
+import { Box, Grid, Button } from "@mui/material";
 // import Particle from "../Particle";
-import pdf from "./Soumyajit_Behera-BIT_MESRA.pdf";
 import jiminpdf from "./jimin.pdf";
+import jimin_resume from "./BackendResume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -22,11 +21,22 @@ function ResumeNew() {
     <Box
       width={"100%"}
       display={"flex"}
+      flexDirection={"column"}
       alignItems={"center"}
       justifyContent={"center"}
       paddingY={"2%"}
     >
-      <Document file={jiminpdf}>
+      <Button
+        variant="outlined"
+        href={jimin_resume}
+        target="_blank"
+        style={{ maxWidth: "250px" }}
+      >
+        <AiOutlineDownload />
+        &nbsp;Download CV
+      </Button>
+      <Box height={"10px"} />
+      <Document file={jimin_resume}>
         <Page pageNumber={1} />
       </Document>
     </Box>
