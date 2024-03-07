@@ -1,0 +1,30 @@
+.techicons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  border: 1.7px solid rgba(86, 124, 229, 0.637) !important;
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  box-shadow: 4px 5px 4px 3px rgba(39, 73, 223, 0.137) !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+
+@media (max-width: 767px) {
+  .techicons {
+    margin: 10px !important;
+  }
+}
+
+.techicons:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 2.2px solid rgba(83, 112, 229, 0.837) !important;
+}
+.techiconimages {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
