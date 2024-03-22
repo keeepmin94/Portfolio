@@ -6,7 +6,7 @@ import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import Resume from "./resume/resume";
 import Career from "./career/Career";
-import DashBoard from "./dashboard/DashBoard";
+import DashBoard from "./dashboard/DashBoards";
 import { Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 
