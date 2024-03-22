@@ -50,7 +50,7 @@ export default function BaseLayout() {
             <Route exact path={"/portfolio"} element={<Portfolio />} />
             <Route exact path={"/resume"} element={<Resume />} />
             <Route exact path={"/career"} element={<Career />} />
-            <Route exact path={"/dashboard"} element={<DashBoard />} />
+            {/* <Route exact path={"/dashboard"} element={<DashBoard />} /> */}
           </Routes>
         </Grid>
         <Grid item>

@@ -56,11 +56,11 @@ const links = [
     to: "/career",
     active: "career",
   },
-  {
-    name: "DashBoard",
-    to: "/dashboard",
-    active: "dashboard",
-  },
+  // {
+  //   name: "DashBoard",
+  //   to: "/dashboard",
+  //   active: "dashboard",
+  // },
 ];
 
 function ResponsiveAppBar({ darkMode, handleClick }) {

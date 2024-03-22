@@ -16,7 +16,7 @@ import {
   SiSwagger,
   SiExpress,
 } from "react-icons/si";
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Tooltip } from "@mui/material";
 import { TbBrandCSharp } from "react-icons/tb";
 import styles from "./TechStack.module.scss";
 
@@ -33,51 +33,81 @@ function TechStack() {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 12, sm: 10, md: 6, lg: 4 }}
       >
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiTypescript />
-        </Box>{" "}
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiJavascript />{" "}
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <TbBrandCSharp />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <DiNodejs />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiNestjs />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiExpress />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiMysql />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiPostgresql />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiAmazonaws />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiAmazonec2 />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiAmazonrds />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiDocker />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <SiSwagger />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <DiReact />
-        </Box>
-        <Box xs={4} md={2} className={styles.techicons}>
-          <DiGit />
-        </Box>
+        <Tooltip title="TypeScript" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiTypescript />
+          </Box>
+        </Tooltip>
+        <Tooltip title="JavaScript" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiJavascript />{" "}
+          </Box>
+        </Tooltip>
+        <Tooltip title="C#" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <TbBrandCSharp />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Node.js" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <DiNodejs />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Nest.js" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiNestjs />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Express" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiExpress />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Mysql" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiMysql />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Postgresql" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiPostgresql />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Amazon AWS" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiAmazonaws />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Amazon EC2" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiAmazonec2 />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Amazon RDS" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiAmazonrds />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Docker" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiDocker />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Swagger" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <SiSwagger />
+          </Box>
+        </Tooltip>
+        <Tooltip title="React" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <DiReact />
+          </Box>
+        </Tooltip>
+        <Tooltip title="Git" placement="bottom">
+          <Box xs={4} md={2} className={styles.techicons}>
+            <DiGit />
+          </Box>
+        </Tooltip>
       </Grid>
     </Box>
   );
