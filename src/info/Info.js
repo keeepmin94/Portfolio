@@ -1,4 +1,3 @@
-import self from "../img/self.png";
 import mock1 from "../img/dollar.png";
 import mock2 from "../img/aslan_nft.png";
 import mock3 from "../img/mustgo.png";
@@ -25,7 +24,6 @@ export const info = {
   lastName: "유",
   initials: "JIMIN", // the example uses first and last, but feel free to use three or more if you like.
   position: "백엔드 개발자",
-  selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
   miniBio: [
