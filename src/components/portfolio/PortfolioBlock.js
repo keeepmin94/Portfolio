@@ -3,7 +3,7 @@ import IconLink from "./IconLink";
 import { Box } from "@mui/material";
 
 function PortfolioBlock(props) {
-  const { image, live, source, title, contents } = props;
+  const { image, source, title, contents, skills } = props;
   return (
     <Box
       display={"flex"}
@@ -30,6 +30,14 @@ function PortfolioBlock(props) {
           paddingBottom={"5%"}
         >
           {contents}
+        </Box>
+        <Box
+          fontSize={"17px"}
+          justifyContent={"start"}
+          alignItems={"start"}
+          paddingBottom={"5%"}
+        >
+          사용 기술: {skills.join(", ")}
         </Box>
         {/* <Box p={1} border={"2px solid black"} borderRadius={"25px"}>
           <IconLink link={live} title={"Live Demo"} icon={"fa fa-safari"} />

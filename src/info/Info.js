@@ -128,6 +128,7 @@ export const info = {
       image: mock1,
       contents:
         "개인 재정을 효과적으로 관리하고 지속 가능한 소비 습관을 형성할 수 있도록 도와주는 예산 관리 어플리케이션입니다.",
+      skills: ["Nest.js", "Postgresql", "Node.js", "Swagger"],
     },
     {
       title: "Aslan NFT",
@@ -136,6 +137,7 @@ export const info = {
       image: mock2,
       contents:
         "블록 체인 연구 및 커뮤니티 운영 단체인 아슬란 아카데미의 자체 NFT 민팅 프로젝트. NFT를 소유함으로서 아슬란 아카데미 소속임을 증명하고 유저가 원하는 케릭터를 직접 커스터마이징하여 NFT를 발급합니다.",
+      skills: ["Nest.js", "Mysql", "EC2", "RDS", "Caddy", "Solidity", "NFT"],
     },
     {
       title: "Must Go",
@@ -144,6 +146,7 @@ export const info = {
       image: mock3,
       contents:
         "공공데이터를 활용하여, 지역 음식점 목록을 자동으로 업데이트 하고 이를 활용하여 내 위치 또는 지정한 위치 기반으로 맛집을 추천하는 서비스입니다.",
+      skills: ["Nest.js", "Postgresql", "open api", "Swagger"],
     },
     {
       title: "FeedDamoa",
@@ -152,6 +155,7 @@ export const info = {
       image: mock4,
       contents:
         "유저 계정의 해시태그(”#daily”) 를 기반으로 인스타그램, 스레드, 페이스북, 트위터 등 복수의 SNS에 게시된 게시물 중 유저의 해시태그가 포함된 게시물들을 하나의 서비스에서 확인할 수 있는 통합 Feed 어플리케이션입니다.",
+      skills: ["Nest.js", "Postgresql", "Node.js", "Swagger"],
     },
   ],
 };
